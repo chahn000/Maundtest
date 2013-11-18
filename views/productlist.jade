@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+    table(id="productlist")
+      tr
+      th Product
+      th Details
+      each product, i in productlist
+        tr
+          td
+            #{product.product}= product.product
+          td
+            #{product.details}= product.details     

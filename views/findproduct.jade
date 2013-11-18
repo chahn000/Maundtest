@@ -1,0 +1,7 @@
+extends layout
+
+block content
+	h1= title
+	form#formQueryProduct(name="queryproduct", method="post", action="/queryproduct")
+		input#inputProductName(type="text", placeholder="product name", name="prodname")
+		button#btnSubmit(type="submit") submit
